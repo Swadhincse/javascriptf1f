@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1> Blog Website</h1>
+            <button id="create-post-btn">Create a Blog</button>
+        </div>
+    </header>
+    <main>
+    </main>
+    <template id="post-form-template">
+        <div class="post-form-overlay">
+            <div class="post-form-container">
+                <button id="close-post-form-btn">&times;</button>
+                <form>
+                    <label for="post-title">Title:</label>
+                    <input type="text" id="post-title" required>
+                    <label for="post-content">Content:</label>
+                    <textarea id="post-content" required></textarea>
+                    <button type="button" id="publish-btn">Publish</button>
+                    <button type="button" id="cancel-btn">Cancel</button>
+                </form>
+            </div>
+            <div class="search-history">
+                <h2>Search History</h2>
+                <ul id="history-list"></ul>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>
